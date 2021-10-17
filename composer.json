@@ -1,0 +1,21 @@
+{
+    "name": "hugoj/tp-composer",
+    "description": "Small project to learn the composer tool",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "hugo",
+            "email": "hugo.jenouvrier@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "monolog/monolog": "^2.3",
+        "twig/twig": "^3.3"
+    },
+    "autoload": {
+        "psr-4": { "App\\": "src/" }
+        }
+            
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>{{title}}</title>
+</head>
+<body>
+<main class="container">
+    <div class="row">
+        <section class="col-12">
+        <h1>Détails de l'utilisateur {{user.email}}</h1>
+        <p>ID : <span class="badge bg-secondary"> {{user.id}}</span></p>
+        <p>Email :  <span class="badge bg-secondary">{{user.email}}</span></p>
+        <p>Role :  <span class="badge bg-secondary">{{user.role}}</span></p>
+
+        <p>
+        <a class="btn btn-primary" href='edit.php?id={{user.id}}'>Modifier</a><br><br>
+        <a class="btn btn-secondary" href='index.php'>Retour à la liste</a><br>
+        </p>
+        </section>
+    </div>
+</main>
+
+</body>
+</html>

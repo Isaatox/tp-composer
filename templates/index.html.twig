@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>{{title}}</title>
+</head>
+<body>
+<h1>{{title}}</h1>
+
+    <table class="table">
+        <thead>
+            <th>ID</th>
+            <th>email</th>
+            <th>role</th>
+        </thead>
+        <tbody>
+    {% for user in users %}
+            <tr>
+            <td>{{user.id}}</td>
+            <td>{{user.email}}</td>
+            <td><a href="read.php?id={{user.id}}">Voir</a> <a href="edit.php?id={{user.id}}">Modifier</a> <a href="delete.php?id={{user.id}}">Supprimer</a></td>
+            </tr>
+    {% endfor %}
+        </tbody>
+    </table>
+       <a href="add.php" class="btn btn-primary">Ajouter un utilisateur</a>
+</body>
+</html>

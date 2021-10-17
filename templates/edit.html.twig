@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <h1 class='text-center'>{{ title }}</h1>       
+                <form method="post">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" class="form-control" value="{{user.email}}" autofocus>
+                        <label for="email">Rôles</label>
+                        <input type="text" id="roles" name="roles" class="form-control" value="{{user.role}}">
+                    </div>
+                    <input type="hidden" value="{{user.id}}" name="id">
+                    <br/>
+                    <button class="btn btn-primary">Enregistrer</button>
+                </form>
+</body>
+</html>
